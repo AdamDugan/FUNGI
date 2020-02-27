@@ -16,7 +16,7 @@ gamut_pvalue <- function(Phenotype_Matrix_Centered,
   library(devtools)
   
   ## Load the GAMuT functions
-  source_url(url = "https://raw.githubusercontent.com/epstein-software/GAMuT/master/GAMuT-functions.R")
+  devtools::source_url(url = "https://raw.githubusercontent.com/epstein-software/GAMuT/master/GAMuT-functions.R")
   
   ## Form the phenotypic similarity matrix and corresponding eigenvalues
   proj_pheno <- proj_GAMuT_pheno(X = Phenotype_Matrix_Centered)
