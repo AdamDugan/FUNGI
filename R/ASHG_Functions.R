@@ -5,10 +5,15 @@
 ## Load Packages ##
 ###################
 
-pkgs = c("gam","fda","nlme")
-for(p in pkgs) if(p %in% rownames(installed.packages()) == FALSE) {install.packages(p, dependencies = TRUE)}
-for(p in pkgs) suppressPackageStartupMessages(library(p, quietly=TRUE, character.only=TRUE))
-rm(p, pkgs)
+library(gam)
+library(fda)
+library(nlme)
+library(mgcv)
+
+#pkgs = c("gam","fda","nlme")
+#for(p in pkgs) if(p %in% rownames(installed.packages()) == FALSE) {install.packages(p, dependencies = TRUE)}
+#for(p in pkgs) suppressPackageStartupMessages(library(p, quietly=TRUE, character.only=TRUE))
+#rm(p, pkgs)
 
 
 
